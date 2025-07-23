@@ -18,38 +18,37 @@ GCC compiler.
 Dependencies
 This project uses the following standard functions and macros:
 
-write (man 2 write)
+	 malloc (man 2 write)
 
-malloc (man 3 malloc)
+	free (man 3 free)
 
-free (man 3 free)
+	va_start (man 3 va_start)
 
-va_start (man 3 va_start)
+	va_end (man 3 va_end)
 
-va_end (man 3 va_end)
+	va_copy (man 3 va_copy)
 
-va_copy (man 3 va_copy)
+	va_arg (man 3 va_arg)
 
-va_arg (man 3 va_arg)
 
 Installation Commands
 Clone the repository:
 
-git clone https://github.com/Schpser/holbertonschool-printf.git
+	git clone https://github.com/Schpser/holbertonschool-printf.git
 
 Navigate into the project directory:
 
-cd holbertonschool-printf
+	cd holbertonschool-printf
 
 Compile the project:
 This project is compiled with gcc using the options -Wall -Werror -Wextra -pedantic -std=gnu89. A Makefile is usually used to automate this process. If not, you will need to manually compile your source files with the specified options.
 Example compilation (if you have a test main.c):
 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -fPIC -c *.c
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -fPIC -c *.c
 
 Or for a simple executable:
 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c _printf.c -o _printf_test
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c _printf.c -o _printf_test
 
 					 🚀 Usage
 
@@ -78,8 +77,8 @@ Although a test main.c file might be provided, it should not be included in the 
 
 You can run the Betty style checkers as follows (make sure you have the scripts at the root of your project):
 
-betty-style.pl *.c
-betty-doc.pl *.c
+	betty-style.pl *.c
+	betty-doc.pl *.c
 
 				   📁 Project Structure
 
@@ -93,13 +92,13 @@ Here is the directory and main file structure for this project:
 	 └── ...                # Other source files (.c) for helper functions if necessary.
 
 
-				 📚 Documentation
+				    📚 Documentation
 
 A man page is available for the _printf function. You can view it by using the terminal command :
 
-man ./man_3_printf
-
-				🙋‍♂️ Contributors
+   man ./man_3_printf
+ 
+				    🙋‍♂️ Contributors
 
 Schps - https://github.com/Schpser
 
