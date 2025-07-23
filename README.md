@@ -84,19 +84,20 @@ betty-doc.pl *.c
 			       📁 Project Structure
 
 Here is the directory and main file structure for this project:
+				 
+     .
+     ├── main.h             # Header file containing all function prototypes.
+     ├── _printf.c          # Implementation of the _printf function and helper functions.
+     ├── man_3_printf       # Man page file for _printf.
+     ├── README.md          # This README file.
+     └── ...                # Other source files (.c) for helper functions if necessary.
 
-.
-├── main.h             # Header file containing all function prototypes.
-├── _printf.c          # Implementation of the _printf function and helper functions.
-├── man_3_printf       # Man page file for _printf.
-├── README.md          # This README file.
-└── ...                # Other source files (.c) for helper functions if necessary.
 
 				 📚 Documentation
 
 A man page is available for the _printf function. You can view it by using the terminal command :
 
-man ./man_3_printfq
+man ./man_3_printf
 
 				🙋‍♂️ Contributors
 
