@@ -1,11 +1,12 @@
 <Create a function that imitates printf>
-										📝 Description
+
+								📝 Description
 
 This project involves the implementation of a custom C function named _printf, which mimics the behavior of the standard printf function. The purpose of this project is to gain a deep understanding of how printf works by recreating its essential functionalities, particularly handling basic conversion specifiers.
 
 Key features include handling conversion specifiers for characters (%c), strings (%s), integers (%d, %i), and the percentage character (%%).
 
-										📦 Installation
+								📦 Installation
 
 To install and use this project locally, follow the steps below.
 
@@ -50,7 +51,7 @@ Or for a simple executable:
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c _printf.c -o _printf_test
 
-										🚀 Usage
+								🚀 Usage
 
 Here's how to use your _printf function in your own C projects.
 
@@ -63,7 +64,7 @@ To use _printf, include the main.h header file and link your program with your c
 <img width="350" height="412" alt="Example_main" src="https://github.com/user-attachments/assets/82ecca06-c2dc-44e4-b488-e6882b6f467a" />
 <img width="389" height="412" alt="Example_out" src="https://github.com/user-attachments/assets/324a247d-ef56-4d34-8565-1cb3a5490994" />
 
-										🧪 Tests
+								🧪 Tests
 Tests are crucial to ensure the correct functionality of _printf.
 
 Tools Used
@@ -79,7 +80,7 @@ You can run the Betty style checkers as follows (make sure you have the scripts 
 betty-style.pl *.c
 betty-doc.pl *.c
 
-										📁 Project Structure
+								📁 Project Structure
 
 Here is the directory and main file structure for this project:
 
@@ -90,17 +91,17 @@ Here is the directory and main file structure for this project:
 ├── README.md          # This README file.
 └── ...                # Other source files (.c) for helper functions if necessary.
 
-										📚 Documentation
+								📚 Documentation
 
 A man page is available for the _printf function. You can view it by using the terminal command :
 
 man ./_printf.3
 
-										🙋‍♂️ Contributors
+								🙋‍♂️ Contributors
 
 Schps - https://github.com/Schpser
 
-										💬 Contact
+								💬 Contact
 										
 For any questions or feedback, you can reach the project maintainers via:
 
