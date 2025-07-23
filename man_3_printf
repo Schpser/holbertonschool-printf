@@ -1,32 +1,53 @@
-.TH _PRINTF 3 "JULY 2025" "Holberton School" "User Manual"
+.TH _PRINTF 3 "JULY 2025" "Holberton School" "User Programm"
+
 .SH NAME
-_printf \- custom printf implementation
+_printf - Imitates printf, Handle: %c, %s, %%, %d and %i.
+
 .SH SYNOPSIS
 .B #include "main.h"
 .br
 .B int _printf(const char *format, ...);
+
 .SH DESCRIPTION
-This function mimics standard printf, supporting:
+.B _printf
+This _printf function displays a formatted string on the standard output.
+It handles the following format specifiers:
 .TP
 .B %c
-Character
+Prints a single character.
 .TP
 .B %s
-String
+Prints a string of characters.
 .TP
 .B %d, %i
-Signed integers
+Prints a decimal integer.
 .TP
 .B %%
-Percent sign
+Prints a literal percent sign.
+
+Any unknown format specifier will be printed as-is, with the % symbol.
+
+.SH PARAMETERS
+.IP format
+A format string, that contains characters and format specifiers.
+.IP ...
+A variable number of arguments to substitute into the format.
+
 .SH RETURN VALUE
-Number of characters printed (int)
-.SH EXAMPLES
-To print a formatted string:
+Returns the total number of characters printed.
+
+.SH EXAMPLE
 .EX
-_printf("Score: %d%%, Name: %s", 100, "Alice");
+_printf("%d%% Complete, great work %s !\n", 100, "John")
 .EE
-.SH AUTHORS
-Holberton Students
+Outputs : 100% Complete, great work John !
+
+.SH AUTHOR
+Written by Holberton student
+.SH SEE ALSO
+printf(3)
+
 .SH COPYRIGHT
-2025 Holberton School - Educational use only
+ This file is a part of a school project. You are allowed to use, modify and
+ redistribute this file for educational purposes only.
+ (c) 2025 Schps
