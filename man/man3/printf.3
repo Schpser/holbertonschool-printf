@@ -1,0 +1,53 @@
+.TH _PRINTF 3 "JULY 2025" "Holberton School" "User Programm"
+
+.SH NAME
+_printf - Imitates printf, Handle: %c, %s, %%, %d and %i.
+
+.SH SYNOPSIS
+.B #include "main.h"
+.br
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+.B _printf
+This _printf function displays a formatted string on the standard output.
+It handles the following format specifiers:
+.TP
+.B %c
+Prints a single character.
+.TP
+.B %s
+Prints a string of characters.
+.TP
+.B %d, %i
+Prints a decimal integer.
+.TP
+.B %%
+Prints a literal percent sign.
+
+Any unknown format specifier will be printed as-is, with the % symbol.
+
+.SH PARAMETERS
+.IP format
+A format string, that contains characters and format specifiers.
+.IP ...
+A variable number of arguments to substitute into the format.
+
+.SH RETURN VALUE
+Returns the total number of characters printed.
+
+.SH EXAMPLE
+.EX
+_printf("%d%% Complete, great work %s !\n", 100, "John")
+.EE
+Outputs : 100% Complete, great work John !
+
+.SH AUTHOR
+Written by Holberton student
+.SH SEE ALSO
+printf(3)
+
+.SH COPYRIGHT
+ This file is a part of a school project. You are allowed to use, modify and
+ redistribute this file for educational purposes only.
+ (c) 2025 Schps
