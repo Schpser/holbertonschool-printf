@@ -11,6 +11,11 @@ int print_number(int n)
 	int count = 0;
 	char c;
 
+	if (n == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return (11);
+	}
 	if (n < 0)
 	{
 		write(1, "-", 1);
@@ -64,9 +69,18 @@ int print_string(va_list args)
 {
 	char *s = va_arg(args, char *);
 	int i = 0, count = 0;
+	char *null_str = "(null)";
 
 	if (!s)
-	s = (NULL);
+	{
+		while (null_str[i])
+		{
+			write(1, &null_str[i], 1);
+			i++;
+			count++;
+		}
+		return (count);
+	}
 
 	while (s[i])
 	{
