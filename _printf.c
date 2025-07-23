@@ -102,7 +102,7 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i = 0, count = 0;
 	{
-    	if (format != NULL && format[0] == '%' && format[1] == '\0')
+		if (format != NULL && format[0] == '%' && format[1] == '\0')
 		return (-1);
 	}
 	va_start(args, format);
