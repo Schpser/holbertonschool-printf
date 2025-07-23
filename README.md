@@ -1,5 +1,5 @@
 <Create a function that imitates printf>
-  
+                                                          📝 Description
 This project involves the implementation of a custom C function named _printf, which mimics the behavior of the standard printf function. The purpose of this project is to gain a deep understanding of how printf works by recreating its essential functionalities, particularly handling basic conversion specifiers.
 
 Key features include handling conversion specifiers for characters (%c), strings (%s), integers (%d, %i), and the percentage character (%%).
