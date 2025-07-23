@@ -98,7 +98,7 @@ A man page is available for the _printf function. You can view it by using the t
 
 man ./_printf.3
 
-      				 🙋‍♂️ Contributors
+				🙋‍♂️ Contributors
 
 Schps - https://github.com/Schpser
 
