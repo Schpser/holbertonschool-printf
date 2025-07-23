@@ -96,7 +96,7 @@ Here is the directory and main file structure for this project:
 
 A man page is available for the _printf function. You can view it by using the terminal command :
 
-man ./_printf.3
+man ./man_3_printfq
 
 				🙋‍♂️ Contributors
 
