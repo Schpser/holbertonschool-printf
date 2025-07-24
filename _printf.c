@@ -90,38 +90,6 @@ int print_string(va_list args)
 	}
 	return (count);
 }
-/**
- * print_binary - Print in binary
- * @args: Argument list
- *
- * Return: Number of character printed
- */
-int print_binary(va_list args)
-{
-	unsigned int n = va_arg(args, unsigned int);
-	int i = 0, count = 0;
-	int started = 0;
-
-	for (i = 31; i >= 0; i--)
-	{
-		char b = ((n >> i) & 1) + '0';
-		if (b == '1')
-			started = 1;
-
-		if (started)
-		{
-			write(1, &b, 1);
-			count++;
-		}
-	}
-	if (!started)
-	{
-		char zero = '0';
-		write(1, &zero, 1);
-		count = 1;
-	}
-	return (count);
-}
 
 /**
  * _printf - Copy of printf function
@@ -154,7 +122,7 @@ int _printf(const char *format, ...)
 				count += print_string(args);
 			else if (format[i] == 'd' || format[i] == 'i')
 				count += print_int(args);
-			else if (format[i + 1] == 'b')
+			else if (format[i] == 'b')
 				count += print_binary(args);
 			else
 			{
