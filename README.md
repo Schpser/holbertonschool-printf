@@ -79,6 +79,9 @@ You can run the Betty style checkers as follows (make sure you have the scripts 
 
 				   📁 Project Structure
 
+<img width="827" height="473" alt="Flowchart_printf" src="https://github.com/user-attachments/assets/82726dbf-e24e-4348-9567-d8020f776c3c" />
+
+
 Here is the directory and main file structure for this project:
 				 
 	 .
