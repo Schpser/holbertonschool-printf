@@ -122,8 +122,6 @@ int _printf(const char *format, ...)
 				count += print_string(args);
 			else if (format[i] == 'd' || format[i] == 'i')
 				count += print_int(args);
-			else if (format[i] == 'b')
-				count += print_binary(args);
 			else
 			{
 				write(1, "%", 1);
