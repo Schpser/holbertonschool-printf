@@ -16,12 +16,9 @@ A Linux development environment (Ubuntu 20.04 LTS recommended).
 GCC compiler.
 
 Dependencies
-This project uses the following standard functions and macros:
+This project uses the following macros:
 
-	 malloc (man 2 write)
-
-	free (man 3 free)
-
+	
 	va_start (man 3 va_start)
 
 	va_end (man 3 va_end)
